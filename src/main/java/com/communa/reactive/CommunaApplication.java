@@ -15,13 +15,5 @@ public class CommunaApplication {
 
 		SpringApplication.run(CommunaApplication.class, args);
 
-}
-class PowercurveRequest
-{
-	int a;
-	List<String> nameList;
-	public PowercurveRequest(int a, List<String> nameList){
-		this.a = a;
-		this.nameList = nameList;
 	}
 }
