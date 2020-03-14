@@ -1,5 +1,6 @@
-package com.communa;
+package com.communa.reactive;
 
+import com.communa.reactive.CommunaApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
