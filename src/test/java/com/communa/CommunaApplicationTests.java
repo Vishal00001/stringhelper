@@ -1,4 +1,4 @@
-package com.communa.reactive;
+package com.communa;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
