@@ -24,14 +24,15 @@ public class Comparor implements IStringOperation {
      * @return the resultant boolean value
      */
     @Override
-    public boolean stringEquals(String string1, String string2) {
+    public boolean stringEquals(String string1, String string2) throws IOException {
 
         if(string1.isEmpty() || string2.isEmpty())
             return false;
 
-        return string1.contentEquals(string2);
-    }
+        ObjectMapper mapper = new ObjectMapper();
 
+        return mapper.readTree(string1).equals(mapper.readTree(string2));
+    }
     /**
      * This method convert string into json node and json node converted
      * into map and passed for traversal
